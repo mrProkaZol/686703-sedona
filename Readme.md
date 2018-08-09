@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Олег Прока](https://up.htmlacademy.ru/htmlcss/22/user/686703).
-* Наставник: `Неизвестно`.
+* Наставник: [Кирилл Петров](https://htmlacademy.ru/profile/frozik).
 
 ---
 

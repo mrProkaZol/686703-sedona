@@ -1,0 +1,10 @@
+@font-face {
+	font-family: "PT Sans";
+	font-style: normal;
+	src:
+		local(fonts/ptsans.woff);
+}
+body {
+	font-family: "PT Sans";
+
+}

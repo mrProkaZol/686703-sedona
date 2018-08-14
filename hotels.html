@@ -32,21 +32,22 @@
   			<form >
           <fieldset>
   				  <legend>Инфраструктура:</legend>
-  						<input type="checkbox" label="pool_Id">Бассейн<br>
-              <input type="checkbox" label="parking_Id">Парковка<br>
-              <input type="checkbox" label="wifi_Id">Wi-Fi<br>
+  						<input type="checkbox" id="Id_pool"><label for="Id_pool">Бассейн<br>
+
+              <input type="checkbox" id="Id_parking"><label for="Id_parking">Парковка<br>
+              <input type="checkbox" id="Id_wifi"><label="Id_wifi">Wi-Fi
   				</fieldset>
           <fieldset>
             <legend>Тип жилья:</legend>
-              <input type="checkbox" label="hotel_Id">Гостиница<br>
-              <input type="checkbox" label="motel_Id">Мотель<br>
-              <input type="checkbox" label="apartments_Id">Апартаменты<br>
+              <input type="checkbox" id="Id_hotel"><label="Id_hotel">Гостиница<br>
+              <input type="checkbox" id="Id_motel"><label="Id_motel">Мотель<br>
+              <input type="checkbox" id="Id_apartments"><label="Id_apartments">Апартаменты
           </fieldset>		
   				<fieldset>
             <legend>Стоимость в сутки (&#8381):</legend>
-              <!--  крутой ползунок с выбором диапазона цен 
-              <input type="range" name="" min="0" max="3000"><br> -->
-              <button type="submit">Показать</button>
+              <!--  крутой ползунок с выбором диапазона цен --> 
+              
+              <input type="submit" value="Показать">
           </fieldset>
         </form>
   		</section>
@@ -68,6 +69,7 @@
                 <img src="img/4stars.jpg" alt="Количество звезд отеля">
                 </div>
               </div>
+
               <div class="line-2">
                 <span class="type-hotel">Гостиница</span>
                 <span class="type-price-hotel">От 4000 &#8381</span>
@@ -76,6 +78,7 @@
                 <a href="amara-resort-spa.html" class="hotels-item">Подробнее</a>
                 <a href="#">Забронировать</button> 
                 <div class="rating">Рейтинг: 8,5</div>
+              </div>  
             </div>
   				</li>
           <li class="hotels-item">
@@ -97,6 +100,7 @@
                 <a href="desert-quail-inn.html" class="hotels-item">Подробнее</a>
                 <a href="#">Забронировать</button> 
                 <div class="rating">Рейтинг: 8,9</div>
+              </div>  
             </div>
           </li>
           <li class="hotels-item">
@@ -118,6 +122,7 @@
                 <a href="villas-poco-diablo.html" class="hotels-item">Подробнее</a>
                 <a href="#">Забронировать</button> 
                 <div class="rating">Рейтинг: 9,2</div>
+              </div>  
             </div>
           </li>  
 

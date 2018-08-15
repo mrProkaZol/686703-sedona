@@ -5,6 +5,8 @@
 		local(fonts/ptsans.woff);
 }
 body {
-	font-family: "PT Sans";
-
+	font-family: "PT Sans", "Arial", sans-serif;
+	width: 1280px;
+  	margin: 0;
+  	padding: 0 40px;
 }

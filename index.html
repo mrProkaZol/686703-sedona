@@ -7,10 +7,7 @@
   </head>
   <body>
   	<header class="main-header">
-      <a class="main-header-logo">
-          <img src="img/index-logo.svg" width="140" height="72" alt="Логотип города Седона">
-      </a>
-  		<nav class="main-navigation">
+      <nav class="main-navigation">
   			<ul class="site-navigation nav-left">
   				<li>
   					<a href="info.html">Информация</a>			
@@ -19,6 +16,9 @@
   					<a href="foto.html">Фото и видео</a>
   				</li>
         </ul>
+        <a class="main-header-logo">
+          <img src="img/index-logo.svg" width="140" height="72" alt="Логотип города Седона">
+        </a>
         <ul class="site-navigation nav-right">  
   				<li>
   					<a href="map.html">Карта штата</a>
@@ -98,11 +98,11 @@
       <form class="form-search-hotel" action="https://echo.htmlacademy.ru" method="post">
         <label for="Id_date-arrival">Дата заезда:
           <input type="text" id="Id_date-arrival" name="date-arrival" value="24 апреля 2017">     
-          <span class="ico_date"></span>
+          <span class="ico_date"><img src="img/icon-calendar.svg"></span>
         </label>  
         <label for="Id_date-departure">Дата выезда:
           <input type="text" id="Id_date-departure" name="date-departure" value="4 июля 2017">
-          <span class="ico_date"></span>
+          <span class="ico_date"><img src="img/icon-calendar.svg"></span>
         </label>  
         <label for="Id_num-people">Взрослые:
           <input type="text" id="Id_num-people" name="count-people" value="1" placeholder="1">
@@ -119,7 +119,7 @@
     </section>
       <section class="map-sedona">
         <a href="https://goo.gl/maps/uYMS3ZYWvqG2" target="_blank">
-          <img src="img/background-map-sedona.jpg" width="1200" height="474" alt="Карта Седоны">
+          <img src="img/background-map-sedona.jpg" width="1200" height="474" alt="Здесь находится Седона">
         </a>
       </section>
     </main>
@@ -135,7 +135,7 @@
     		</ul>
     	</div>
     	<div class="footer-copyright">
-        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">Website by html academy</a>
+        <a class="button-copyright" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">Website by html academy</a>
       </div> 	
     </footer>
     

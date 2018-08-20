@@ -7,68 +7,93 @@
 </head>
 <body>
   <header class="main-header">
-      <a class="main-header-logo" href="index.html">
-          <img src="img/index-logo.svg" width="140" height="72" alt="Логотип города Седона">
-      </a>
-      <nav class="main-navigation">
-        <ul class="site-navigation nav-left">
+    <nav class="main-navigation">
+      <ul class="site-navigation nav-left">
           <li>
             <a href="info.html">Информация</a>      
           </li>
           <li>
             <a href="foto.html">Фото и видео</a>
           </li>
-        </ul>
-        <ul class="site-navigation nav-right">  
+      </ul>
+      <a class="main-header-logo" href="index.html">
+          <img src="img/index-logo.svg" width="140" height="72" alt="Логотип города Седона">
+      </a>
+      <ul class="site-navigation nav-right">  
           <li>
             <a href="map.html">Карта штата</a>
           </li>
           <li class="site-navigation-current">
             <a href="hotels.html">Гостиницы</a>
           </li>
-        </ul>
-      </nav>
+      </ul>
+     </nav>
   </header>
 	<main class="container">
   		<section class="form-search-hotel">
   			<h1 class="visually-hidden">Фильтр отелей</h1>
         <img src="img/background-form-search-hotel.jpg" width="1200" height="217" alt="background-form">
-  			<form >
+  			<form class="filter-hotels" action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
   				  <legend>Инфраструктура:</legend>
               <label class="checkbox">
-                <input type="checkbox" name="pool" class="visually-hidden">
+                <input type="checkbox" name="type-infrastructure" class="visually-hidden" value="pool" checked>
                 <span class="checkbox-indicator"></span>
                 Бассейн
               </label>
               <label class="checkbox">
-                <input type="checkbox" name="parking" class="visually-hidden">
+                <input type="checkbox" name="type-infrastructure" class="visually-hidden" value="parking">
                 <span class="checkbox-indicator"></span>
                 Парковка
               </label>
               <label class="checkbox">
-                <input type="checkbox" name="wifi" class="visually-hidden">
+                <input type="checkbox" name="type-infrastructure" class="visually-hidden" value="wi-fi">
                 <span class="checkbox-indicator"></span>
                 Wi-Fi
+              </label>  
           </fieldset>
           <fieldset>
             <legend>Тип жилья:</legend>
-              <input type="checkbox" id="Id_hotel"><label for="Id_hotel">Гостиница</label>
-              <input type="checkbox" id="Id_motel"><label for="Id_motel">Мотель</label>
-              <input type="checkbox" id="Id_apartments"><label for="Id_apartments">Апартаменты</label>
+              <label class="checkbox">
+                <input type="checkbox" name="type-house" class="visually-hidden" value="hotel" checked>
+                <span class="checkbox-indicator"></span>
+                Гостиница
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="type-house" class="visually-hidden" value="motel" checked>
+                <span class="checkbox-indicator"></span>
+                Мотель
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="type-house" class="visually-hidden" value="apartmens" checked>
+                <span class="checkbox-indicator"></span>
+                Апартаменты
+              </label>
           </fieldset>		
   				<fieldset>
             <legend>Стоимость в сутки (&#8381):</legend>
+              <div class="range-price">
+                <span>От 0</span>
+                <span class="strip"></span>
+                <span>До 3000</span>
+              </div>
               <!--  крутой ползунок с выбором диапазона цен --> 
-              
+              <input type="range" name="price-hotels">
               <button>Показать</button>
           </fieldset>
         </form>
   		</section>
   		<section class="search-results">
-  			<h2 class="visually-hidden">Найдено отелей</h2>
-<!--   			здесь будет форма фильтра выдачи отелей
- -->  	
+  			<h2 class="visually-hidden">Найдено отелей: 3</h2>
+        <span class="sort-hotels">Сортировка:
+          <a href="#">По цене</a>
+          <a href="#">По типу</a>
+          <a href="#">По рейтингу</a>
+          <span class="up-down-dir">
+            <a href=""><img src="img/icon-down-dir.svg"></a>
+            <a href=""><img src="img/icon-up-dir.svg"></a>
+          </span>  
+        </span>
  <!--     карточка отеля   -->
         <ul class="search-results-list">
 	
@@ -161,10 +186,10 @@
         </ul>
       </div>
       <div class="footer-copyright">
-        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">Website by html academy</a>
+        <a class="button-copyright" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">Website by html academy</a>
       </div>  
     </footer>
-    
+ 
 
 </body>
 </html>

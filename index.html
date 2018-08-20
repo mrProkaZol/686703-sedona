@@ -9,7 +9,7 @@
   	<header class="main-header">
       <a class="main-header-logo">
           <img src="img/index-logo.svg" width="140" height="72" alt="Логотип города Седона">
-        </a>
+      </a>
   		<nav class="main-navigation">
   			<ul class="site-navigation nav-left">
   				<li>
@@ -92,21 +92,29 @@
     	<section class="search-hotel">
     		<h2>Заинтересовались?</h2>
     		<p>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-    		<button name="form-search-hotel">Поиск гостиницы в седоне</button>	
+    		<button class="button open-form-search-hotel">Поиск гостиницы в седоне</button>	
     	</section>
       <section class="hidden-window-search-hotel">
-      <form class="form-search-hotel" action="" method="post">
-        <label for="Id_date-arrival">Дата заезда:</label>
-          <input type="text" id="Id_date-arrival" value="24 апреля 2017">     
-            <div class="ico_date"></div>
-        <label for="Id_date-departure">Дата выезда:</label>
-          <input type="text" id="Id_date-departure" value="4 июля 2017">
-            <div class="ico_date"></div>
-        <label for="Id_num-people">Взрослые:</label>
-          <input type="number" id="Id_num-people" value="1" min="1" step="1">
-        <label for="Id_num-child">Дети:</label>      
-          <input type="number" id="Id_num-child" value="0" min="0" step="1">
-        <button>Найти</button>  
+      <form class="form-search-hotel" action="https://echo.htmlacademy.ru" method="post">
+        <label for="Id_date-arrival">Дата заезда:
+          <input type="text" id="Id_date-arrival" name="date-arrival" value="24 апреля 2017">     
+          <span class="ico_date"></span>
+        </label>  
+        <label for="Id_date-departure">Дата выезда:
+          <input type="text" id="Id_date-departure" name="date-departure" value="4 июля 2017">
+          <span class="ico_date"></span>
+        </label>  
+        <label for="Id_num-people">Взрослые:
+          <input type="text" id="Id_num-people" name="count-people" value="1" placeholder="1">
+          <span class="icon-minus"><img src="img/icon-minus.png"></span>
+          <span class="icon-plus"><img src="img/icon-plus.png"></span>  
+        </label>  
+        <label for="Id_num-child">Дети:      
+          <input type="text" id="Id_num-child" name="count-child" value="0" placeholder="0">
+          <span class="icon-minus"><img src="img/icon-minus.png"></span>
+          <span class="icon-plus"><img src="img/icon-plus.png"></span>
+        </label> 
+        <button class="button" type="submit">Найти</button>  
       </form>
     </section>
       <section class="map-sedona">
@@ -117,7 +125,7 @@
     </main>
     <footer class="main-footer">
     	<div class="footer-hestag">
-        <a href="https://www.instagram.com/explore/tags/visitsedona/" target="_blank">#visitsedona</a>
+        <a href="https://www.instagram.com/explore/tags/visitsedona/" target="_blank" >#visitsedona</a>
       </div>  
     	<div class="footer-social">
     		<ul>

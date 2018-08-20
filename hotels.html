@@ -3,41 +3,54 @@
 <head>
 	<meta charset="utf-8">
     <title>Седона: Поиск Отеля</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<header class="main-header">
-  		<nav class="main-navigation">
-  			<a class="main-header-logo" href="index.html">
-  				<img src="img/index-logo.svg" width="140" height="72" alt="Логотип города Седона">
-  			</a>	
-  			<ul class="site-navigation">
-  				<li>
-  					<a href="info.html">Информация</a>			
-  				</li>
-  				<li>
-  					<a href="foto.html">Фото и видео</a>
-  				</li>
-  				<li>
-  					<a href="map.html">Карта штата</a>
-  				</li>
-  				<li class="site-navigation-current">
-  					<a href="#">Гостиницы</a>
-  				</li>
-  			</ul>
-  		</nav>
+  <header class="main-header">
+      <a class="main-header-logo" href="index.html">
+          <img src="img/index-logo.svg" width="140" height="72" alt="Логотип города Седона">
+      </a>
+      <nav class="main-navigation">
+        <ul class="site-navigation nav-left">
+          <li>
+            <a href="info.html">Информация</a>      
+          </li>
+          <li>
+            <a href="foto.html">Фото и видео</a>
+          </li>
+        </ul>
+        <ul class="site-navigation nav-right">  
+          <li>
+            <a href="map.html">Карта штата</a>
+          </li>
+          <li class="site-navigation-current">
+            <a href="hotels.html">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
   </header>
-  	<main class="container">
+	<main class="container">
   		<section class="form-search-hotel">
   			<h1 class="visually-hidden">Фильтр отелей</h1>
         <img src="img/background-form-search-hotel.jpg" width="1200" height="217" alt="background-form">
   			<form >
           <fieldset>
   				  <legend>Инфраструктура:</legend>
-  						<input type="checkbox" id="Id_pool"><label for="Id_pool">Бассейн</label>
-
-              <input type="checkbox" id="Id_parking"><label for="Id_parking">Парковка</label>
-              <input type="checkbox" id="Id_wifi"><label for="Id_wifi">Wi-Fi</label>
-  				</fieldset>
+              <label class="checkbox">
+                <input type="checkbox" name="pool" class="visually-hidden">
+                <span class="checkbox-indicator"></span>
+                Бассейн
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="parking" class="visually-hidden">
+                <span class="checkbox-indicator"></span>
+                Парковка
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="wifi" class="visually-hidden">
+                <span class="checkbox-indicator"></span>
+                Wi-Fi
+          </fieldset>
           <fieldset>
             <legend>Тип жилья:</legend>
               <input type="checkbox" id="Id_hotel"><label for="Id_hotel">Гостиница</label>

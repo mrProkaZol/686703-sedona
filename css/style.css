@@ -13,6 +13,13 @@ body {
 	background-color: #f2f2f2;
 
 }
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 
 a {
 	text-decoration: none;
@@ -43,6 +50,9 @@ a {
 	color: #81b3d2;
 }
 .main-navigation a:active {
+	color: #766357;
+}
+.site-navigation-current a {
 	color: #766357;
 }
 
@@ -89,4 +99,143 @@ a {
 }
 .features-list {
 	list-style: none;
+}
+.search-hotel {
+	background-color: #ffffff;
+}
+.search-hotel h2{
+	font-size: 30px;
+}
+
+button {
+	border: none;
+	text-transform: uppercase;
+}
+
+button.open-form-search-hotel {
+	width: 568px;
+	height: 86px;
+		
+	font-size: 21px;
+	font-weight: 700;
+	color: #ffffff;
+	
+	background-color: #766357;
+	
+}
+button.open-form-search-hotel:hover,
+button.open-form-search-hotel:focus {
+	background-color: #604e44;
+}
+button.open-form-search-hotel:active {
+	color: rgba(255,255,255, 0.3);
+	background-color: #503e32;
+}
+form.form-search-hotel {
+	font-weight: 700;
+
+}
+form button.button {
+	width: 458px;
+	height: 58px;
+
+	font-size: 21px;
+	font-weight: 700;
+	color: #ffffff;
+	text-transform: uppercase;
+
+	background-color: #81b3d2;
+	border: none;
+
+}
+form button.button:hover,
+form button.button:focus {
+	background-color: #669ebf;
+}
+form button.button:active {
+	color: rgba(255,255,255, 0.3);
+	background-color: #5596be;
+}
+.icon-date {
+	background-color: #f2f2f2;
+}
+
+.icon-date svg {
+	fill: rgba(0,0,0, 0.3);
+} 
+.icon-date svg:hover,
+.icon-date svg:focus {
+	fill: rgba(0,0,0);
+}
+.icon-date svg:active {
+	fill: #82b3d3;
+}
+.icon-minus, 	
+.icon-plus {
+	background-color: #f2f2f2;
+} 
+
+.icon-minus img:hover,
+.icon-minus img:focus,
+.icon-plus img:hover,
+.icon-plus img:focus {
+	filter: invert(1);
+}
+
+.map-sedona {
+	/*width: 768px;*/
+	height: 478px;
+
+	background-image: url("../img/background-map-sedona.jpg");
+}
+.form-search-hotel {
+	color: #ffffff;
+	background-image: url("../img/background-form-search-hotel.jpg");
+}
+
+footer {
+	width: 768px;
+	height: 120px;
+
+	background-color: #ffffff;
+}
+.footer-hestag a {
+	font-size: 21px;
+	font-weight: 700;
+
+	color: #000000;
+	
+}
+
+.footer-social ul {
+	list-style: none;
+	
+}
+
+.footer-social a{
+	width: 46px;
+	height: 48px;
+	background-color: #81b3d2;
+}
+.footer-social a:hover,
+.footer-social a:focus {
+	background-color: #669ebf;
+}
+.footer-social a:active {
+	color: rgba(255,255,255, 0.3);
+	background-color: #669ebf;
+}
+.footer-copyright a{
+	color: #000000;
+}
+.footer-copyright svg {
+	width: 115px;
+	height: 41px;
+}
+.copyright:hover,
+.copyright:focus {
+	fill: #82b3d3;
+}
+.copyright:active {
+	fill: #bcbabb;
 }
